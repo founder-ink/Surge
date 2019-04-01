@@ -1,0 +1,93 @@
+/**index.wxss**/
+
+page {
+  background: #FEFFFE;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: 0 4%;
+  box-sizing: border-box;
+}
+
+.banner {
+  width: 100%;
+  height: 400rpx;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.banner-left {
+  width: 21%;
+  height: 260rpx;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: space-between;
+}
+
+.banner-right {
+  width: 75%;
+  height: 260rpx;
+  background: bisque;
+  border-radius: 20rpx;
+  box-shadow: 0 1px 10px 1px rgba(0,0,0,0.1);
+}
+
+.banner-menu {
+  width: 100%;
+  height: 140rpx;
+  border-bottom: 1px solid #ECECEC;
+}
+
+.banner-date {
+  width: 100%;
+  height: 61%;
+  background: bisque;
+  border-radius: 20rpx;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+  padding: 10%;
+  box-sizing: border-box;
+  text-align: center;
+  color: #FFFFFF;
+  letter-spacing: 1rpx;
+  box-shadow: 0 1px 10px 1px rgba(0,0,0,0.1);
+  background: url("http://pp8qnwtjv.bkt.clouddn.com/surge-lamp.jpg") no-repeat center center ;
+  background-size: cover;
+}
+
+.banner-date .today {
+  width: 100%;
+  font-size: 24rpx; 
+  font-weight: 500;
+  font-family: "Noto Sans CJK SC", "Source Han Sans CN";
+}
+
+.banner-date .date {
+  width: 100%;
+  margin-top: 2rpx;
+  font-size: 60rpx;
+  font-family: "Helvetica Neue";
+  font-weight: 500;
+}
+
+.banner-search {
+  width: 100%;
+  height: 30%;
+  background: #FEFFFE;
+  border-radius: 20rpx;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 1px 10px 1px rgba(0,0,0,0.1);
+}
+
+.featured {
+  width: 100%;
+  height: 570rpx;
+  border-bottom: 1px solid #ECECEC;
+}

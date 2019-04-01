@@ -1,0 +1,30 @@
+<!--index.wxml-->
+<view class="container" animation="{{animationData}}">
+
+  <!-- banner -->
+  <view class="banner">
+    <!-- banner-left -->
+    <view class="banner-left">
+      <!-- 今日 -->
+      <view class="banner-date" bindtap="redirectToCalendar">
+        <view class="today">Today</view>
+        <view class="date">{{date}}</view>
+      </view>
+      <!-- 搜索 -->
+      <view class="banner-search">
+        <text class="iconfont icon-chazhao"></text>
+      </view>
+    </view>
+    <!-- banner-right -->
+    <view class="banner-right">
+    <!-- 幻灯片 -->
+    </view>
+    <!-- 菜单 -->
+    <view class="banner-menu"></view>
+  </view>
+
+  <!-- 精选 -->
+  <view class="featured">
+  </view>
+
+</view>

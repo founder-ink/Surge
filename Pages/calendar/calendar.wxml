@@ -1,0 +1,39 @@
+<!--Pages/calendar/calendar.wxml-->
+
+<!-- 添加任务 -->
+<cover-view class="nav-button">
+  <cover-view class="nav-ulysses" bindtap="">
+    <cover-view class="iconfont icon-icon_ping" ></cover-view>
+  </cover-view>
+</cover-view>
+
+<scroll-view>
+  <text class="iconfont icon-roundclosefill close" bindtap="close"></text>
+  <view class="today">Today</view>
+  <view class="weather">
+    <text></text>
+    <text></text>
+  </view>
+  <view></view>
+  <view class="liquid">
+    <view wx:for="{{liquid}}" wx:key="index" class="panel">
+      <view class="panel-head">
+        <view class="panel-type">
+          <text class="iconfont icon-Camera"></text>  
+        </view>
+        <view class="panel-info">
+          <view class="panel-icon"></view>
+          <view class="panel-timeline">1小时前</view>
+        </view>      
+        <view class="panel-pin">
+          <text class="panel-author">待办事件</text>
+        </view>
+      </view>
+      <view class="panel-body">
+        <text class="panel-title">{{item.title}}</text>
+      </view>
+    </view>
+  </view>
+
+  
+</scroll-view>

@@ -1,0 +1,51 @@
+@import "/util/iconfont.wxss";
+
+.tab-bar {
+  position: fixed;
+  width: 100%;
+  bottom: 48rpx;
+  z-index: 999;
+  height: 96rpx;
+  line-height: 96rpx;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.active {
+  background: #69b076;
+  border-radius: 50%;
+  width: 96rpx;
+  height: 96rpx;
+  text-align: center;
+  line-height: 96rpx;
+  box-shadow: 0 2px 4px 1px rgba(0,0,0,0.1);
+}
+
+.active .iconfont{
+  font-size: 56rpx;
+  color:#FFFFFF;
+  line-height:inherit;
+}
+
+.normal {
+  background: #C3DFC7;
+  border-radius: 50%;
+  width: 80rpx;
+  height: 80rpx;
+  text-align: center;
+  line-height: 80rpx;
+  box-shadow: 0 2px 4px 1px rgba(0,0,0,0.1);
+}
+
+.normal .iconfont{
+  font-size: 44rpx;
+  color:#FFF;
+  line-height:inherit;
+}
+
+.space-left {
+  margin-left: 50rpx;
+}
+

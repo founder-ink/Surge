@@ -1,0 +1,27 @@
+{
+  "pages": [
+    "index/index",
+    "index/index2",
+    "Pages/calendar/calendar",
+    "Pages/calendar/pin",
+    "Pages/calendar/calendar-info",
+    "Pages/timeline/timeline"
+  ],
+  "tabBar": {
+    "custom": true,
+    "list": [
+      {
+        "pagePath": "index/index"
+      },
+      {
+        "pagePath": "index/index2"
+      }
+    ]
+  },
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "WeChat",
+    "navigationBarTextStyle": "black"
+  }
+}

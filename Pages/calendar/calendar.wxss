@@ -76,7 +76,7 @@ page {
   font-size: 24rpx;
   height: 46rpx; 
   width: 100%;
-  line-height: 52rpx;
+  line-height: 50rpx;
   padding-left: 2%; 
 }
 
@@ -105,7 +105,6 @@ page {
   border-radius: 20rpx;
   box-shadow: 0 0px 10px 1px rgba(0,0,0,0.2);
   letter-spacing: 1px;
-  padding: 2% 4%;
   box-sizing: border-box;
 }
 
@@ -122,12 +121,14 @@ page {
 .panel-body2 {
   width: 100%;
   height: 160rpx;
-  border-radius: 20rpx;
-  display: flex;
+  border-radius: 20rpx; 
   box-shadow: 0 0px 10px 1px rgba(0,0,0,0.2);
+  letter-spacing: 1px;
+  background: #FEFFFE;
+  color: #000000;
   padding: 2% 4%;
   box-sizing: border-box;
-  letter-spacing: 1px;
+  display: flex;
 }
 
 .panel-body2 .panel-left {
@@ -147,7 +148,6 @@ page {
 .panel-body2 .panel-title {
   width: 100%;
   height: 78%;
-  color: #FEFFFE;
   font-size: 32rpx;
   display: flex;
   align-items: center;
@@ -157,7 +157,7 @@ page {
 .panel-body2 .panel-author {
   width: 100%;
   height: 22%;
-  color: #FEFFFE;
+  color: #8e8e93;
   font-size: 26rpx;
 }
 
@@ -170,12 +170,7 @@ page {
   width: 100%;
   height: 420rpx;
   border-radius: 20rpx;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: flex-start;
   box-shadow: 0 0px 10px 1px rgba(0,0,0,0.2);
-  padding: 4% 4%;
-  box-sizing: border-box;
   color: #FEFFFE;
   letter-spacing: 1px;
 }
@@ -200,15 +195,14 @@ page {
 }
 
 .user-img {
-  width: 100%;
-  height: 100%;
+  width: 110rpx;
+  height: 110rpx;
   border-radius: 50%;
 }
 
-
 .nav-button {
   position: fixed;
-  width: 92%;
+  width: 100%;
   bottom: 48rpx;
   z-index: 999;
   height: 140rpx;
@@ -232,4 +226,25 @@ page {
   font-size: 48rpx;
   color:#69b076;
   line-height:inherit;
+}
+
+.panel-body1 .panel-mask {
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,.2);
+  padding: 2% 4%;
+  box-sizing: border-box;
+  border-radius: 20rpx;
+}
+
+.panel-body3 .panel-mask {
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,.2);
+  padding: 2% 4%;
+  box-sizing: border-box;
+  border-radius: 20rpx;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
 }

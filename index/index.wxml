@@ -18,13 +18,59 @@
     <!-- banner-right -->
     <view class="banner-right">
     <!-- 幻灯片 -->
+      <swiper indicator-dots="true" autoplay="true" interval="6000">
+        <block wx:for="{{swiper}}">
+          <swiper-item>
+            <image src="{{item}}" class="slide-image" width="100%" height="100%" />
+          </swiper-item>
+        </block>
+    </swiper>
     </view>
     <!-- 菜单 -->
-    <view class="banner-menu"></view>
+    <view class="banner-menu">
+      <view class="menu-tab">
+        <view class="menu-tab-img">
+          <image src="../image/icon/Box.png"></image>
+        </view>
+        <view class="menu-tab-text">  
+          <text>地点标记</text>
+        </view>
+      </view>
+
+      <view class="menu-tab">
+        <view class="menu-tab-img">
+          <image src="../image/icon/Box.png"></image>
+        </view>
+        <view class="menu-tab-text">  
+          <text>地点标记</text>
+        </view>
+      </view>
+
+      <view class="menu-tab">
+        <view class="menu-tab-img">
+          <image src="../image/icon/Box.png"></image>
+        </view>
+        <view class="menu-tab-text">  
+          <text>地点标记</text>
+        </view>
+      </view>
+
+      <view class="menu-tab">
+        <view class="menu-tab-img">
+          <image src="../image/icon/Box.png"></image>
+        </view>
+        <view class="menu-tab-text">  
+          <text>地点标记</text>
+        </view>
+      </view>
+    </view>
   </view>
 
   <!-- 精选 -->
   <view class="featured">
+    <text>一期一会</text>
+    <scroll-view>
+    </scroll-view>
   </view>
 
 </view>

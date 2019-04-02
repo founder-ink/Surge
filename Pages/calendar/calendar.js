@@ -14,13 +14,12 @@ Page({
         time: "距今12天",
         author: "方 正",
         wallpaper:"http://pp8qnwtjv.bkt.clouddn.com/surge-lamp.jpg",
-
       },
       {
         type: "钉一下",
         title: "记得买猫粮哦！记得买猫粮哦！记得买猫粮哦！",
         emoji: "emoji",
-        time: "2小时前",
+        time: "10 : 31",
         author: "方正",
         wallpaper: "http://pp8qnwtjv.bkt.clouddn.com/surge-bg1.jpg",
         userImg: "http://pp8qnwtjv.bkt.clouddn.com/surge-bg2.jpg"
@@ -33,7 +32,6 @@ Page({
         author: "方 正",
         wallpaper: "http://pp8qnwtjv.bkt.clouddn.com/surge-bg3.jpg",
         FYI:"蛮横天真可爱 都是你不可解的魔术成份"
-
       },
       {
         type: "记忆碎片",
@@ -42,7 +40,6 @@ Page({
         author: "方正",
         wallpaper: "http://pp8qnwtjv.bkt.clouddn.com/surge-bg4.jpg",
         num:"2"
-
       }
 
     ]

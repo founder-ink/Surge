@@ -35,26 +35,35 @@
       </view>
 
       <view class="panel-body1" wx:if="{{item.type == '节假日'}}" style="background: url('{{item.wallpaper}}') no-repeat center center; background-size: cover;">
-        <text class="panel-title">{{item.title}}</text>
+        <view class="panel-mask">
+          <text class="panel-title">{{item.title}}</text>
+        </view>
       </view>
-      <view class="panel-body2" wx:if="{{item.type == '钉一下'}}" style="background: url('{{item.wallpaper}}') no-repeat center center; background-size: cover;">
+
+      <view class="panel-body2" wx:if="{{item.type == '钉一下'}}">
         <view class="panel-left">
           <text class="panel-title">{{item.title}}</text>
           <text class="panel-author">-来自 <text class="panel-author-highlight">{{item.author}}</text></text>
         </view>
         <view class="panel-right">
-          <button class="user-img" style="background: url('{{item.userImg}}') no-repeat center center; background-size: cover;"></button>
-        </view>  
+          <view class="user-img" style="background: url('{{item.userImg}}') no-repeat center center; background-size: cover;"></view>
+        </view>
       </view>
+
       <view class="panel-body3" wx:if="{{item.type == '时光轴'}}" style="background: url('{{item.wallpaper}}') no-repeat center center; background-size: cover;">
-        <text class="panel-title1">我们的纪念</text>
-        <text class="panel-title2">{{item.title}}</text>
-        <text class="panel-title3">{{item.FYI}}</text>
+        <view class="panel-mask">
+          <text class="panel-title1">我们的纪念</text>
+          <text class="panel-title2">{{item.title}}</text>
+          <text class="panel-title3">{{item.FYI}}</text>
+        </view>
       </view>
+
       <view class="panel-body3" wx:if="{{item.type == '记忆碎片'}}" style="background: url('{{item.wallpaper}}') no-repeat center center; background-size: cover;">
-        <text class="panel-title1">Pieces of Time</text>
-        <text class="panel-title2">那年·今日</text>
-        <text class="panel-title3">时光机捞取到{{item.num}}块碎片</text>
+        <view class="panel-mask">
+          <text class="panel-title1">Pieces of Time</text>
+          <text class="panel-title2">那年·今日</text>
+          <text class="panel-title3">时光机捞取到{{item.num}}块碎片</text>
+        </view>
       </view>
     </view>
   </view>

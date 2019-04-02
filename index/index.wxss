@@ -31,7 +31,7 @@ page {
   height: 260rpx;
   background: bisque;
   border-radius: 20rpx;
-  box-shadow: 0 1px 10px 1px rgba(0,0,0,0.1);
+  box-shadow: 0 0px 10px 1px rgba(0,0,0,0.2);
 }
 
 .banner-menu {
@@ -54,7 +54,7 @@ page {
   text-align: center;
   color: #FFFFFF;
   letter-spacing: 1rpx;
-  box-shadow: 0 1px 10px 1px rgba(0,0,0,0.1);
+  box-shadow: 0 0px 10px 1px rgba(0,0,0,0.2);
   background: url("http://pp8qnwtjv.bkt.clouddn.com/surge-lamp.jpg") no-repeat center center ;
   background-size: cover;
 }
@@ -83,7 +83,7 @@ page {
   display: flex;
   align-items: center;
   justify-content: center;
-  box-shadow: 0 1px 10px 1px rgba(0,0,0,0.1);
+  box-shadow: 0 0px 10px 1px rgba(0,0,0,0.2);
 }
 
 .featured {

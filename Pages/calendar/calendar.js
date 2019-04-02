@@ -8,26 +8,43 @@ Page({
   data: {
     liquid: [
       {
-        title: "攻略|怎么爱你都不够呀"
+        type: "节假日",
+        title: "国庆节",
+        emoji: "emoji",
+        time: "距今12天",
+        author: "方 正",
+        wallpaper:"http://pp8qnwtjv.bkt.clouddn.com/surge-lamp.jpg",
+
       },
       {
-        title: "1"
+        type: "钉一下",
+        title: "记得买猫粮哦！记得买猫粮哦！记得买猫粮哦！",
+        emoji: "emoji",
+        time: "2小时前",
+        author: "方正",
+        wallpaper: "http://pp8qnwtjv.bkt.clouddn.com/surge-bg1.jpg",
+        userImg: "http://pp8qnwtjv.bkt.clouddn.com/surge-bg2.jpg"
       },
       {
-        title: "1"
+        type: "时光轴",
+        title: "恋爱纪念&&结婚纪念",
+        emoji: "emoji",
+        time: "4月10日",
+        author: "方 正",
+        wallpaper: "http://pp8qnwtjv.bkt.clouddn.com/surge-bg3.jpg",
+        FYI:"蛮横天真可爱 都是你不可解的魔术成份"
+
       },
       {
-        title: "1"
-      },
-      {
-        title: "1"
-      },
-      {
-        title: "1"
-      },
-      {
-        title: "1"
+        type: "记忆碎片",
+        emoji: "emoji",
+        time: "4月11日",
+        author: "方正",
+        wallpaper: "http://pp8qnwtjv.bkt.clouddn.com/surge-bg4.jpg",
+        num:"2"
+
       }
+
     ]
   },
 

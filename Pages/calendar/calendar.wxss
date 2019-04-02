@@ -4,7 +4,6 @@ page {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  padding: 8% 4% 0 4%;
   box-sizing: border-box;
 }
 
@@ -21,7 +20,11 @@ page {
   font-size: 48rpx; 
   font-weight: 900;
   font-family: "Noto Sans CJK SC Blod", "Source Han Sans CN Blod";
-  margin-left: 1%;
+  margin: 2% 0 0 5%;
+}
+
+.weather {
+  
 }
 
 .liquid {
@@ -29,12 +32,16 @@ page {
   flex-wrap: wrap;
   justify-content: center;
   align-items: flex-start;
+  margin-top: 60rpx; 
 }
 
 .panel {
-  width: 100%;
-  height: 340rpx;
+  width: 92%;
+  height: auto;
   border-bottom: 1px solid #ECECEC;
+  padding-bottom: 80rpx;
+  box-sizing: border-box; 
+  margin: 8% 4% 0 4%；
 }
 
 .panel-head {
@@ -45,33 +52,39 @@ page {
   align-items: center;
 }
 
-.panel-type .iconfont {
-  width: 10%;
+.panel-icon {
+  width: 12%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.panel-type .iconfont {
-  font-size: 40rpx;
-  color: #69b076;
+.panel-icon image {
+  width: 44rpx;
+  height: 44rpx;
 }
 
 .panel-info {
-  width: 76%;
+  width: 74%;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
 }
 
-.panel-icon {
+.panel-emoji {
+  font-size: 24rpx;
+  height: 46rpx; 
   width: 100%;
-  height: 45rpx;
+  line-height: 52rpx;
+  padding-left: 2%; 
 }
 
-.panel-timeline {
+.panel-time {
   width: 100%;
-  height: 45rpx;
+  height: 40rpx;
   font-size: 20rpx;
   color: #8e8e93;
-  padding: 20rpx;
 }
 
 .panel-pin {
@@ -86,22 +99,112 @@ page {
   justify-content: center;
 }
 
-.panel-body {
+.panel-body1 {
   width: 100%;
   height: 160rpx;
-  background: brown;
   border-radius: 20rpx;
-  display: flex;
-  align-items: flex-end;
-  box-shadow: 0 1px 3px 1px rgba(0,0,0,0.3);
+  box-shadow: 0 0px 10px 1px rgba(0,0,0,0.2);
+  letter-spacing: 1px;
+  padding: 2% 4%;
+  box-sizing: border-box;
 }
 
-.panel-title {
-  width: 80%;
+.panel-body1 .panel-title{
+  width: 100%;
   color: #FEFFFE;
-  font-size: 30rpx;
-  margin: 0 0 2% 2%;
+  font-size: 40rpx;
+  font-weight: 700;
+  height: 100%;
+  display: flex;
+  align-items: center;
 }
+
+.panel-body2 {
+  width: 100%;
+  height: 160rpx;
+  border-radius: 20rpx;
+  display: flex;
+  box-shadow: 0 0px 10px 1px rgba(0,0,0,0.2);
+  padding: 2% 4%;
+  box-sizing: border-box;
+  letter-spacing: 1px;
+}
+
+.panel-body2 .panel-left {
+  width: 80%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.panel-body2 .panel-right {
+  width: 20%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+.panel-body2 .panel-title {
+  width: 100%;
+  height: 78%;
+  color: #FEFFFE;
+  font-size: 32rpx;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+}
+
+.panel-body2 .panel-author {
+  width: 100%;
+  height: 22%;
+  color: #FEFFFE;
+  font-size: 26rpx;
+}
+
+.panel-body2 .panel-author .panel-author-highlight {
+  text-decoration:underline;
+  color: #69b076;
+}
+
+.panel-body3 {
+  width: 100%;
+  height: 420rpx;
+  border-radius: 20rpx;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  box-shadow: 0 0px 10px 1px rgba(0,0,0,0.2);
+  padding: 4% 4%;
+  box-sizing: border-box;
+  color: #FEFFFE;
+  letter-spacing: 1px;
+}
+
+.panel-body3 .panel-title1 {
+  width: 100%;
+  font-size: 20rpx;
+  height: 20%;
+}
+
+.panel-body3 .panel-title2 {
+  width: 100%;
+  font-size: 42rpx;
+  font-weight: 600;
+  height: 70%;
+}
+
+.panel-body3 .panel-title3 {
+  width: 100%;
+  font-size: 20rpx;
+  height: 10%;
+}
+
+.user-img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+
 
 .nav-button {
   position: fixed;

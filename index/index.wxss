@@ -5,17 +5,17 @@ page {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  padding: 0 4%;
   box-sizing: border-box;
 }
 
 .banner {
   width: 100%;
-  height: 400rpx;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   flex-wrap: wrap;
+  padding: 0 4%;
+  box-sizing: border-box;
 }
 
 .banner-left {
@@ -135,4 +135,195 @@ page {
   width: 100%;
   height: 570rpx;
   border-bottom: 1px solid #ECECEC;
+  padding-left: 4%;
+  box-sizing: border-box;
 }
+
+.featured .featured-title {  
+  width: 100%;
+  height: 110rpx;
+  display: flex;
+  align-items: center;
+  font-weight: 600;
+  letter-spacing: 1px;
+  font-size: 40rpx;
+}
+
+.featured .panel {
+  height: 440rpx;
+  box-sizing: border-box; 
+  display: flex;
+  white-space: nowrap;
+}
+
+.featured .panel .panel-body {
+  display: inline-block;
+  width: 580rpx;
+  height: 410rpx;
+  border-radius: 20rpx;
+  box-shadow: 0 0px 10px 1px rgba(0,0,0,0.2);
+  color: #FEFFFE;
+  letter-spacing: 1px;
+  margin-right: 30rpx;
+}
+
+.featured .panel .panel-body .panel-title1 {
+  width: 100%;
+  font-size: 20rpx;
+  height: 20%;
+}
+
+.featured .panel .panel-body .panel-title2 {
+  width: 100%;
+  font-size: 42rpx;
+  font-weight: 600;
+  height: 70%;
+}
+
+.featured .panel .panel-body .panel-title3 {
+  width: 100%;
+  font-size: 20rpx;
+  height: 10%;
+}
+
+.featured .panel .panel-body .panel-mask {
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,.2);
+  padding: 2% 4%;
+  box-sizing: border-box;
+  border-radius: 20rpx;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+
+.flow {
+  width: 100%;
+  padding-left: 4%;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+.flow .flow-title {  
+  width: 100%;
+  height: 110rpx;
+  display: flex;
+  align-items: center;
+  font-weight: 600;
+  letter-spacing: 1px;
+  font-size: 40rpx;
+}
+
+.flow .gift {
+  width: 100%;
+  height: 580rpx;
+  box-sizing: border-box;
+}
+
+.flow .gift-title {
+  width: 100%;
+  height: 120rpx;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+}
+
+.flow .gift-title view{
+  width: 4px;
+  height: 60rpx;
+  box-sizing: border-box;
+  background: #69b076;
+  border-radius: 4px;
+}
+
+.flow .gift-title text{
+  margin-left: 4%;
+  font-size: 36rpx;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+.gift .panel {
+  height: 350rpx;
+  box-sizing: border-box; 
+  display: flex;
+  white-space: nowrap;
+}
+
+.gift .panel-card {
+  display: inline-block;
+  width: 280rpx;
+  height: 250rpx;
+  border-radius: 20rpx;
+  margin-right: 30rpx;
+}
+
+.gift .panel .panel-body {
+
+  width: 100%;
+  height: 260rpx;
+  border-radius: 20rpx;
+  box-shadow: 0 0px 10px 1px rgba(0,0,0,0.2);
+  color: #FEFFFE;
+  letter-spacing: 1px;
+  margin-right: 40rpx;
+}
+
+.gift .panel .panel-mask {
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,.2);
+  padding: 10%;
+  box-sizing: border-box;
+  border-radius: 20rpx;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end;
+}
+
+.gift .panel .panel-body .panel-mask .panel-title {
+  overflow: hidden;
+  font-size: 24rpx;
+  height: 40%;
+}
+
+.gift .panel .panel-user {
+  width: 100%;
+  display: flex;
+  height: 90rpx;
+  align-items: center;
+}
+
+.gift .panel .panel-user .panel-userImg{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.gift .panel .panel-user .panel-userImg image{
+  width: 58rpx;
+  height: 58rpx;
+  border-radius: 50%;
+}
+
+.gift .panel .panel-user .panel-userName {
+  box-sizing: border-box;
+  padding-left: 5%;
+}
+.gift .panel .panel-user .panel-userName text{
+  font-size: 22rpx;
+}
+
+.gift .panel-info {
+  width:280rpx;
+  background:#69b076;
+  border-radius:30rpx;
+  height:52rpx;
+  font-size:24rpx;
+  color:#FFFFFF;
+  line-height:52rpx;
+  margin:30rpx 0 30rpx 0;
+
+}
+

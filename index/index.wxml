@@ -19,7 +19,7 @@
     <view class="banner-right">
     <!-- 幻灯片 -->
       <swiper indicator-dots="true" autoplay="true" interval="6000">
-        <block wx:for="{{swiper}}">
+        <block wx:for="{{swiper}}" wx:key="index">
           <swiper-item>
             <image src="{{item}}" class="slide-image" width="100%" height="100%" />
           </swiper-item>
@@ -68,9 +68,66 @@
 
   <!-- 精选 -->
   <view class="featured">
-    <text>一期一会</text>
-    <scroll-view>
+    <view class="featured-title">
+      <text>一期一会</text>
+    </view>
+    <scroll-view class="panel" scroll-x="true">
+      <view wx:for="{{liquid}}" wx:key="index" class="panel-body" style="background: url('{{item.wallpaper}}') no-repeat center center; background-size: cover;">
+        <view class="panel-mask">
+          <text class="panel-title1">我们的纪念</text>
+          <text class="panel-title2">{{item.title}}</text>
+          <text class="panel-title3">{{item.FYI}}</text>
+        </view>
+      </view>
     </scroll-view>
+  </view>
+
+  <!-- 蜜语甜言 -->
+  <view class="flow">
+    <view class="flow-title">
+      <text>春风十里</text>
+    </view>
+
+    <view class="gift">
+      <view class="gift-title">
+        <view></view>
+        <text>好友寄语</text>
+      </view>
+      <scroll-view class="panel" scroll-x="true">
+        <view wx:for="{{gift}}" wx:key="index" class="panel-card">
+          <view class="panel-body" style="background: url('{{item.wallpaper}}') no-repeat center center; background-size: cover;">
+            <view class="panel-mask">
+              <text class="panel-title">{{item.userMessage}}</text>
+            </view>
+          </view>
+          <view class="panel-user">
+            <view class="panel-userImg">
+              <image src="{{item.userImg}}"></image>
+            </view>
+            <view class="panel-userName">
+              <text>{{item.userName}}</text>
+            </view>
+          </view>
+        </view>     
+      </scroll-view>
+      <button class="panel-info">来自 惦念彼此的挚友</button>
+    </view>
+
+    <view class="flow" wx:for="{{flow}}" wx:key="index1">
+      <view class="flow-loveWords">
+        <text>{{item.loveWords}}</text>
+      </view>
+      <scroll-view class="panel" scroll-x="true">
+        <view wx:for="{{}}" wx:key="index2" class="panel-body" style="background: url('{{item.wallpaper}}') no-repeat center center; background-size: cover;">
+          <view class="panel-mask">
+            <text class="panel-title1">我们的纪念</text>
+            <text class="panel-title2">{{item.title}}</text>
+            <text class="panel-title3">{{item.FYI}}</text>
+          </view>
+        </view>
+      </scroll-view>
+    </view>
+    
   </view>
 
 </view>

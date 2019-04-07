@@ -1,4 +1,4 @@
-// Pages/calendar/calendar-info.js
+// Pages/gallery/gallery.js
 Page({
 
   /**

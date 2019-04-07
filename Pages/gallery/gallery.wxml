@@ -1,0 +1,8 @@
+<!--Pages/gallery/gallery.wxml-->
+<view>
+  <view class="wallpaper">
+    <view class="wallpaper-mask">
+      <image src="http://pp8qnwtjv.bkt.clouddn.com/surge-bg3.jpg"></image>
+    </view>
+  </view>
+</view>

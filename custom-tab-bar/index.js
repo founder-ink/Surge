@@ -3,13 +3,13 @@ Component({
     selected: 0,
     list: [{
       pagePath: "/index/index",
-      iconfont: "icon-icon_Inbox",
+      img: "../image/icon/icon_Inbox.png",
       active: "active",
       normal: "normal"
     }, 
     {
       pagePath: "/index/index2",
-      iconfont: "icon-discoverfill",
+      img: "../image/icon/icon_namecard_fill.png",
       active: "active space-left",
       normal: "normal space-left"
     }]

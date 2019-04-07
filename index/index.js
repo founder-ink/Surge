@@ -1,98 +1,112 @@
+const app = getApp()
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
+    // 今日
     date: new Date().getDate(),
-    swiper: [
-      'https://images.unsplash.com/photo-1551334787-21e6bd3ab135?w=640',
-      'https://images.unsplash.com/photo-1551214012-84f95e060dee?w=640',
-      'https://images.unsplash.com/photo-1551446591-142875a901a1?w=640'
-    ],
-    liquid: [
+    // 轮播图
+    swiper: [],
+    // banner
+    liquid: [],
+    // 留言
+    message: [],
+    // 情话
+    poem: [],
+    tab: [
       {
-        type: "时光轴",
-        title: "恋爱纪念&&结婚纪念",
-        emoji: "emoji",
-        time: "4月10日",
-        author: "方正",
-        wallpaper: "http://pp8qnwtjv.bkt.clouddn.com/surge-bg3.jpg",
-        FYI: "蛮横天真可爱 都是你不可解的魔术成份"
+        image: "../image/icon/Box.png",
+        title: "见字如面"
       },
       {
-        type: "时光轴",
-        title: "恋爱纪念&&结婚纪念",
-        emoji: "emoji",
-        time: "4月10日",
-        author: "方正",
-        wallpaper: "http://pp8qnwtjv.bkt.clouddn.com/surge-bg3.jpg",
-        FYI: "蛮横天真可爱 都是你不可解的魔术成份"
+        image: "../image/icon/Camera.png",
+        title: "相片"
       },
       {
-        type: "时光轴",
-        title: "恋爱纪念&&结婚纪念",
-        emoji: "emoji",
-        time: "4月10日",
-        author: "方正",
-        wallpaper: "http://pp8qnwtjv.bkt.clouddn.com/surge-bg3.jpg",
-        FYI: "蛮横天真可爱 都是你不可解的魔术成份"
+        image: "../image/icon/Printer.png",
+        title: "发布"
       },
       {
-        type: "时光轴",
-        title: "恋爱纪念&&结婚纪念",
-        emoji: "emoji",
-        time: "4月10日",
-        author: "方正",
-        wallpaper: "http://pp8qnwtjv.bkt.clouddn.com/surge-bg3.jpg",
-        FYI: "蛮横天真可爱 都是你不可解的魔术成份"
-      },
-      {
-        type: "时光轴",
-        title: "恋爱纪念&&结婚纪念",
-        emoji: "emoji",
-        time: "4月10日",
-        author: "方正",
-        wallpaper: "http://pp8qnwtjv.bkt.clouddn.com/surge-bg3.jpg",
-        FYI: "蛮横天真可爱 都是你不可解的魔术成份"
-      }
-    ],
-    gift: [
-      {
-        userMessage: "祝福你们",
-        userName: "方正",
-        userImg: "http://pp8qnwtjv.bkt.clouddn.com/surge-bg7.jpg",
-        wallpaper: "http://pp8qnwtjv.bkt.clouddn.com/surge-bg3.jpg"
-      },
-      {
-        userMessage: "祝福你们",
-        userName: "方正",
-        userImg: "http://pp8qnwtjv.bkt.clouddn.com/surge-bg7.jpg",
-        wallpaper: "http://pp8qnwtjv.bkt.clouddn.com/surge-bg3.jpg"
-      },
-      {
-        userMessage: "祝福你们",
-        userName: "方正",
-        userImg: "http://pp8qnwtjv.bkt.clouddn.com/surge-bg4.jpg",
-        wallpaper: "http://pp8qnwtjv.bkt.clouddn.com/surge-bg3.jpg"
-      },
-      {
-        userMessage: "祝福你们",
-        userName: "方正",
-        userImg: "http://pp8qnwtjv.bkt.clouddn.com/surge-bg4.jpg",
-        wallpaper: "http://pp8qnwtjv.bkt.clouddn.com/surge-bg3.jpg"
+        image: "../image/icon/Cloud.png",
+        title: "纪念日"
       }
     ]
+    
   },
+  // 跳转日历页面
   redirectToCalendar: function () {
     wx.redirectTo({
       url: '../Pages/calendar/calendar',
+    })
+  },
+  navigateToGallery: function () {
+    wx.navigateTo({
+      url: '../Pages/gallery/gallery',
     })
   },
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
+    let _this = this
+    wx.request({
+      url: app.serverUrl + '/slide/querySlide',
+      method: "POST",
+      data: {
+      },
+      header: {
+        'content-type': 'application/json'
+      },
+      success: function (res) {
+        _this.setData({
+          swiper: res.data.data
+        })
+      }
+    })
+    wx.request({
+      url: app.serverUrl + '/banner/queryBanner',
+      method: "POST",
+      data: {
+      },
+      header: {
+        'content-type': 'application/json'
+      },
+      success: function (res) {
+        _this.setData({
+          liquid : res.data.data
+        })
+      }
+    })
+    wx.request({
+      url: app.serverUrl + '/message/queryMessage',
+      method: "POST",
+      data: {
+      },
+      header: {
+        'content-type': 'application/json'
+      },
+      success: function (res) {
+        _this.setData({
+          message: res.data.data
+        })
+      }
+    })
+    wx.request({
+      url: app.serverUrl + '/poem/queryPoem',
+      method: "POST",
+      data: {
+      },
+      header: {
+        'content-type': 'application/json'
+      },
+      success: function (res) {
+        _this.setData({
+          poem: res.data.data
+        })
+      }
+    })
   },
 
   /**

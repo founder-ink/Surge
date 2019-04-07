@@ -4,8 +4,9 @@
     "index/index2",
     "Pages/calendar/calendar",
     "Pages/calendar/pin",
-    "Pages/calendar/calendar-info",
-    "Pages/timeline/timeline"
+    "Pages/timeline/timeline",
+    "Pages/setting/setting",
+    "Pages/gallery/gallery"
   ],
   "tabBar": {
     "custom": true,

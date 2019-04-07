@@ -1,0 +1,8 @@
+<!--Pages/setting/setting.wxml-->
+<view class="container">
+  <view class="setting-box" wx:for="{{setting}}" wx:key="index">
+    <view class="about" wx:for="{{item.options}}" wx:key="index1" wx:for-item="item1">
+      <text class="about-title">{{item1.title}}</text>
+    </view>
+  </view>
+</view>

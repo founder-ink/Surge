@@ -3,9 +3,9 @@
 .tab-bar {
   position: fixed;
   width: 100%;
-  bottom: 48rpx;
+  bottom: 20rpx;
   z-index: 999;
-  height: 96rpx;
+  height: 160rpx;
   line-height: 96rpx;
   display: flex;
   flex-direction: row;
@@ -13,20 +13,30 @@
   align-items: center;
 }
 
+.tab-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.tab-img {
+  width: 36rpx;
+  height: 36rpx;
+}
+
+.active .tab-img{
+  width: 60rpx;
+  height: 60rpx;
+}
+
 .active {
   background: #69b076;
   border-radius: 50%;
-  width: 96rpx;
-  height: 96rpx;
+  width: 100rpx;
+  height: 100rpx;
   text-align: center;
   line-height: 96rpx;
-  box-shadow: 0 2px 4px 1px rgba(0,0,0,0.1);
-}
-
-.active .iconfont{
-  font-size: 56rpx;
-  color:#FFFFFF;
-  line-height:inherit;
+  box-shadow: 0 2px 4px 1px rgba(0,0,0,0.2);
 }
 
 .normal {

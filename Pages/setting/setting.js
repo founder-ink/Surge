@@ -1,22 +1,31 @@
+// Pages/setting/setting.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    userName: "澈澈",
-
+    setting: [{
+        options: [{
+          title: "关于我们"
+        },
+        {
+          title: "分享我们的故事"
+        }]
+      }, 
+      {
+        options: [{
+          title: "退出登录"
+        }]
+      }
+    ]
   },
 
-  redirectToSetting: function () {
-    wx.redirectTo({
-      url: '../Pages/setting/setting',
-    })
-  },
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
+
   },
 
   /**
@@ -30,12 +39,7 @@ Page({
    * 生命周期函数--监听页面显示
    */
   onShow: function () {
-    if (typeof this.getTabBar === 'function' &&
-      this.getTabBar()) {
-      this.getTabBar().setData({
-        selected: 1
-      })
-    }
+
   },
 
   /**

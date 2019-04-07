@@ -2,8 +2,8 @@
 
 <!-- 添加任务 -->
 <cover-view class="nav-button">
-  <cover-view class="nav-ulysses" bindtap="">
-    <cover-view class="iconfont icon-icon_ping" ></cover-view>
+  <cover-view class="nav-ulysses">
+      <cover-image class="nav-ulysses-img" src="../../image/icon/Write.png"></cover-image>
   </cover-view>
 </cover-view>
 

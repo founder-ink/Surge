@@ -220,12 +220,14 @@ page {
   text-align: center;
   line-height: 110rpx;
   box-shadow: 0 0px 20px 1px rgba(0,0,0,0.2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.nav-ulysses .iconfont{
-  font-size: 48rpx;
-  color:#69b076;
-  line-height:inherit;
+.nav-ulysses .nav-ulysses-img {
+  width: 48rpx;
+  height: 48rpx;
 }
 
 .panel-body1 .panel-mask {

@@ -1,1 +1,83 @@
-<view class="intro">接口</view>
+<view class="user">
+  <!-- banner -->
+  <view class="banner">
+    <!-- banner-left -->
+    <view class="banner-left" style="background: url('http://pp8qnwtjv.bkt.clouddn.com/surge-bg3.jpg') no-repeat center center; background-size: cover;">
+      <view class="banner-left-mask">
+        
+        <view class="banner-left-top">
+          <view class="user-edit">
+            <text class="iconfont icon-icon_ping"></text>
+          </view>
+        </view>
+        
+        <view class="banner-left-bottom">
+          <text class="userName">
+            <text>{{userName}}</text>___
+          </text>
+          <text class="userPage">查看主页</text>
+        </view>
+      </view>
+    </view>
+    <!-- banner-right -->
+    <view class="banner-right">
+      <!-- 消息 -->
+      <view class="banner-message" bindtap="redirectToCalendar">
+        <view class="message-title">消息</view>
+        <view class="message-icon">
+          <text class="iconfont icon-icon_message_fill"></text> 
+          <text class="message-num">{{num}}</text>
+        </view>
+      </view>
+      <!-- 设置 -->
+      <view class="banner-setting" bindtap="redirectToSetting">
+        <text class="iconfont icon-icon_setting_fill"></text>
+      </view>
+    </view>
+  </view>
+
+  <view class="category-group">
+    <view class="category">
+      <view class="category-left"> 
+        <view class="category-img">
+          <image src="../image/icon/Box.png"></image>
+        </view>
+        <text class="category-title">收藏</text>
+      </view>
+      <view class="category-right">
+        <text class="category-info">您现在有0条收藏</text>
+        <text class="iconfont icon-icon_next_arrow"></text>
+      </view>
+    </view>
+    <view class="category">
+      <view class="category-left"> 
+        <view class="category-img">
+          <image src="../image/icon/Box.png"></image>
+        </view>
+        <text class="category-title">收藏</text>
+      </view>
+      <view class="category-right">
+        <text class="category-info">您现在有0条收藏</text>
+        <text class="iconfont icon-icon_next_arrow"></text>
+      </view>
+    </view>
+  </view>
+
+  <view class="star">
+    <view class="star-title">
+      <text>收藏夹</text>
+    </view>
+    <view class="star-box">
+      <view class="star-box-img" style="background: url('http://pp8qnwtjv.bkt.clouddn.com/surge-bg3.jpg') no-repeat center center; background-size: cover;">
+        <view class="star-box-mask">
+          <view class="star-box-title">
+            <text>我的</text>
+            <text>生活手册</text>
+          </view>
+        </view>
+      </view>
+      
+    </view>
+  </view>
+
+</view>

@@ -41,6 +41,7 @@ Page({
       url: '../Pages/calendar/calendar',
     })
   },
+  // 跳转到相册
   navigateToGallery: function () {
     wx.navigateTo({
       url: '../Pages/gallery/gallery',

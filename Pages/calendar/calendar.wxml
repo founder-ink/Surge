@@ -1,12 +1,12 @@
 <!--Pages/calendar/calendar.wxml-->
 
-<!-- 添加任务 -->
-<cover-view class="nav-button">
+<!-- 添加待办事项 -->
+<cover-view class="nav-button" bindtap="navigateToPin">
   <cover-view class="nav-ulysses">
       <cover-image class="nav-ulysses-img" src="../../image/icon/Write.png"></cover-image>
   </cover-view>
 </cover-view>
-
+<!-- 日历 -->
 <scroll-view>
   <text class="iconfont icon-roundclosefill close" bindtap="close"></text>
   <view class="today">Today</view>

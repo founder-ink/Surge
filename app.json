@@ -3,10 +3,11 @@
     "index/index",
     "index/index2",
     "Pages/calendar/calendar",
-    "Pages/calendar/pin",
     "Pages/timeline/timeline",
     "Pages/setting/setting",
-    "Pages/gallery/gallery"
+    "Pages/gallery/gallery",
+    "Pages/pin/pin",
+    "Pages/emoji/emoji"
   ],
   "tabBar": {
     "custom": true,

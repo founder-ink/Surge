@@ -126,7 +126,7 @@ page {
   letter-spacing: 1px;
   background: #FEFFFE;
   color: #000000;
-  padding: 2% 4%;
+  padding: 2% 4% 2% 8%;
   box-sizing: border-box;
   display: flex;
 }
@@ -226,8 +226,8 @@ page {
 }
 
 .nav-ulysses .nav-ulysses-img {
-  width: 48rpx;
-  height: 48rpx;
+  width: 40rpx;
+  height: 40rpx;
 }
 
 .panel-body1 .panel-mask {

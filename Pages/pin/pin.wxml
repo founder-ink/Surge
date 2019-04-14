@@ -1,0 +1,29 @@
+<!--Pages/pin/pin.wxml-->
+<view class="container">
+  <view class="pin">
+    <view class="pin-header">
+      <view class="pin-header-user">
+        <view class="pin-userImg" style="background: url('http://pp8qnwtjv.bkt.clouddn.com/surge-lamp.jpg') no-repeat center center; background-size: cover;"></view>
+        <text class="pin-userName">澈澈</text>
+      </view>
+      
+      <view class="pin-upload" bindtap="chooseImage">
+        <view class="pin-upload-img">
+          <text class="iconfont icon-icon_photo_fill"></text>
+        </view>
+      </view>
+    </view>
+    <view class="pin-body">
+      <textarea bindblur="bindTextAreaBlur" placeholder="说说你的想法.." />
+    </view>
+    <view class="pin-footer" bindtap="navigateToEmoji">
+      <text class="pin-footer-type">选择类别</text>
+      <text class="iconfont icon-right"></text>
+    </view>
+
+    <view class="pin-footer" bindtap="submit">
+      <text class="pin-footer-type">发布</text>
+    </view>
+
+  </view>
+</view>

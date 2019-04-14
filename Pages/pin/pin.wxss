@@ -1,0 +1,113 @@
+/* Pages/pin/pin.wxss */
+
+Page {
+  background: #F7F7F7;  
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  box-sizing: border-box;
+}
+
+.container {
+  padding: 4%;
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+}
+
+.pin {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.pin-header {
+  background: #FEFFFE;
+  width: 100%;
+  height: 230rpx;
+  box-sizing: border-box;
+  padding: 4%;
+}
+
+.pin-header-user {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  font-size: 28rpx;
+}
+
+
+.pin-userImg {
+  width: 60rpx;
+  height: 60rpx;
+  border-radius: 50%;
+  margin-right: 2%;
+}
+
+.pin-upload {
+  width: 100%;
+  height: 160rpx;
+  display: flex;
+  align-items: center;
+}
+
+.pin-upload-img {
+  width: 80rpx;
+  height: 80rpx;
+  font-size: 36rpx;
+  background: #F7F7F7;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #9B9B9B;
+  border-radius: 4px;
+}
+
+.pin-body {
+  background: #FEFFFE;
+  width: 100%;
+  font-size: 24rpx;
+  color: #F7F7F7;
+  box-sizing: border-box;
+  padding: 4%;
+}
+
+.pin-body textarea {
+  height: 400rpx;
+}
+
+.pin-footer {
+  box-sizing: border-box;
+  margin-top: 4%;
+  background: #FEFFFE;
+  width: 100%;
+  text-align: center;
+  position: relative;
+  border-radius: 10px;
+  height: 120rpx;
+}
+
+.pin-footer-type {
+  color: 9D9F9C;
+  font-size: 28rpx;
+  height: 100%;
+  line-height: 120rpx;
+}
+
+.pin-footer .icon-right{
+  position: absolute;
+  right: 4%;
+  height: 100%;
+  top: 0;
+  line-height: 120rpx;
+}
+
+.pin-actionBar {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100rpx;
+}

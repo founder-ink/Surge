@@ -1,4 +1,5 @@
-// Pages/calendar/pin.js
+// Pages/emoji/emoji.js
+const app = getApp()
 Page({
 
   /**

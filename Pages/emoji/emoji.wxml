@@ -1,0 +1,16 @@
+<!--Pages/emoji/emoji.wxml-->
+<text>Pages/emoji/emoji.wxml</text>
+<view class="emojiSearch">
+  <view>
+    <input placeholder="搜索类别" auto-focus />
+  </view>
+  <view>
+    <text class="iconfont icon-Search"></text>
+  </view>
+</view>
+
+<scroll-view>
+  <view>
+    🌈
+  </view>
+</scroll-view>

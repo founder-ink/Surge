@@ -1,0 +1,39 @@
+.menu {
+  width: 94%;
+  height: 160rpx;
+  border-bottom: 1px solid #ececec;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 0 6%;
+  margin-left: 3%;
+  box-sizing: border-box;
+}
+
+.menu-tab {
+  width: 100rpx;
+  height: 100rpx;
+}
+
+.menu-tab image {
+  width: 38rpx;
+  height: 38rpx;
+}
+
+.menu-tab-img {
+  display: flex;
+  justify-content: center;
+  height: 80rpx;
+  align-items: flex-end;
+  padding-bottom: 18rpx;
+  box-sizing: border-box;
+}
+
+.menu-tab-text {
+  font-size: 20rpx;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  height: 20rpx;
+  letter-spacing: 2rpx;
+}

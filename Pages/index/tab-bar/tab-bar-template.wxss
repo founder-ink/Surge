@@ -1,4 +1,4 @@
-@import "/util/iconfont.wxss";
+@import "../../../util/iconfont.wxss";
 
 .tab-bar {
   position: fixed;
@@ -17,6 +17,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-right: 50rpx;
 }
 
 .tab-img {

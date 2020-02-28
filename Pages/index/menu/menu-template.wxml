@@ -1,0 +1,14 @@
+<template name="menu">
+  <view class="menu">
+    <block wx:for="{{tab}}" wx:key="index" wx:for-item="item">
+      <view class="menu-tab" catch:tap="navigateToGallery" data-id="{{index}}" data-title="{{item.title}}">
+        <view class="menu-tab-img">
+          <image src="{{item.image}}"></image>
+        </view>
+        <view class="menu-tab-text">
+          <text>{{item.title}}</text>
+        </view>
+      </view>
+    </block>
+  </view>
+</template>

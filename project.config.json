@@ -12,13 +12,15 @@
 		"autoAudits": false
 	},
 	"compileType": "miniprogram",
-	"libVersion": "2.6.4",
-	"appid": "wx8c338a9477aa12ea",
-	"projectname": "%E8%87%AA%E5%AE%9A%E4%B9%89%20tabBar",
+	"libVersion": "2.10.1",
+	"appid": "wxc70415756d23e637",
+	"projectname": "Spoiler",
 	"debugOptions": {
 		"hidedInDevtools": []
 	},
 	"isGameTourist": false,
+	"simulatorType": "wechat",
+	"simulatorPluginLibVersion": {},
 	"condition": {
 		"search": {
 			"current": -1,

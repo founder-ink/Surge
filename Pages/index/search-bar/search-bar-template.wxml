@@ -1,0 +1,6 @@
+<template name="search-bar">
+  <view class="search-bar">
+    <image src="../../image/icon/Search.png" />
+    <input class="search-input" placeholder="大连 · 回忆" maxlength="20" />
+  </view>
+</template>

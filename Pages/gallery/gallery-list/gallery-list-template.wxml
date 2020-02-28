@@ -1,0 +1,14 @@
+<import src="../gallery-item/gallery-item-template.wxml" />
+<template name="gallery-list">
+  <view class="gallery-list">
+    <scroll-view scroll-x="{{true}}">
+      <view class="gallery-list-panel" >
+        <block wx:for="{{gallery}}" wx:for-item="item" wx:key="index">
+          <template is="gallery-item" data="{{...item}}" />
+        </block>
+        <view class="gallery-list-block"></view>
+      </view>
+    </scroll-view>
+  </view>
+</template>
+

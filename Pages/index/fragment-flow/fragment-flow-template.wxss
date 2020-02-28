@@ -1,0 +1,74 @@
+@import "../fragment-item/fragment-item-template.wxss";
+
+/* flow */
+.flow {
+  width: 100%;
+  overflow: hidden;
+}
+
+.flow-title {
+  width: 96%;
+  height: 120rpx;
+  display: flex;
+  align-items: center;
+  font-weight: 600;
+  letter-spacing: 1px;
+  font-size: 40rpx;
+  padding-left: 4%;
+}
+
+/* nav */
+.nav {
+  width: 100%;
+  height: 660rpx;
+}
+
+.nav-title {
+  width: 97%;
+  height: 100rpx;
+  display: flex;
+  align-items: center;
+  margin-left: 3%;
+}
+
+.nav-title-block{
+  width: 4px;
+  height: 60rpx;
+  background: #6AB076;
+  border-radius: 4px;
+}
+
+.flow .nav-title text{
+  margin-left: 4%;
+  font-size: 36rpx;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+.panel {
+  height: 440rpx;
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+}
+
+.hr {
+  width: 94%;
+  background: #ECECEC;
+  margin: 0 auto 30rpx auto;
+  height: 2rpx;
+}
+
+.panel-info {
+  width: 240rpx;
+  background: #6ab076;
+  border-radius: 30rpx;
+  height: 48rpx;
+  font-size: 24rpx;
+  color: #fefffe;
+  line-height: 52rpx;
+  margin: 20rpx 0 20rpx 3%;
+  font-weight: 600;
+  padding-left: 4%;
+}
+

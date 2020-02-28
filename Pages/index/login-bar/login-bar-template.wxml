@@ -1,0 +1,6 @@
+<template name="login-bar">
+  <button class="login-bar" open-type="getUserInfo" lang="zh_CN" bind:getuserinfo="onGotUserInfo">
+    <image src="../../image/icon/Cursor.png"></image>
+    <view>登录开启美好生活</view>
+  </button>
+</template>

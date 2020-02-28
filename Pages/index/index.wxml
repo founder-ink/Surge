@@ -1,0 +1,223 @@
+<import src="login-bar/login-bar-template.wxml" />
+<import src="tab-bar/tab-bar-template.wxml" />
+<import src="menu/menu-template.wxml" />
+<import src="featured-panel/featured-panel-template.wxml" />
+<import src="fragment-flow/fragment-flow-template.wxml" />
+<import src="search-bar/search-bar-template.wxml" />
+<swiper autoplay="{{false}}" current="{{tabIndex}}" bindchange="switchSwiper" class="home-swiper">
+  <swiper-item class="swiper-item">
+    <!-- index.wxml -->
+    <scroll-view scroll-y="{{true}}" id="container" class="container" hidden="{{containerShow}}" bind:scroll="scroll">
+      <view>
+        <!-- 搜索框 -->
+        <!-- search-bar -->
+        <view class="container-search-bar" hidden="{{searchBarHidden}}">
+          <template is="search-bar" />
+        </view>
+        <!-- banner -->
+        <view class="banner">
+          <!-- banner-left -->
+          <view class="banner-left">
+            <!-- 今日 -->
+            <!-- banner-date -->
+            <view class="banner-date" bind:tap="redirectToCalendar">
+              <image src="https://spoiler-1257360572.cos.ap-beijing.myqcloud.com/images/lamp.jpg" mode="aspectFill" />
+              <view class="today">Today</view>
+              <view class="date">{{date}}</view>
+            </view>
+            <!-- 搜索 -->
+            <!-- banner-search -->
+            <view class="banner-search">
+              <text class="iconfont icon-chazhao"></text>
+            </view>
+          </view>
+          <!-- banner-right -->
+          <view class="banner-right">
+            <!-- 幻灯片 -->
+            <!-- swiper -->
+            <swiper autoplay="{{true}}" interval="10000" circular="{{true}}" catch:tap="onSwiperTap">
+              <block wx:for="{{swiper}}" wx:key="index">
+                <swiper-item>
+                  <image src="{{item}}" class="slide-image" width="100%" height="100%" mode="aspectFill" />
+                </swiper-item>
+              </block>
+            </swiper>
+          </view>
+        </view>
+        <!-- 菜单 -->
+        <!-- menu -->
+        <view class="container-menu">
+          <template is="menu" data="{{tab}}" />
+        </view>
+        <!-- 精选 -->
+        <template is="featured-panel" data="{{...featured}}" />
+        <!-- 生活帖精选 -->
+        <template is="fragment-flow" data="{{...fragment}}" />
+      </view>
+    </scroll-view>
+  </swiper-item>
+  <swiper-item class="swiper-item">
+    <view id="userInfo" class="userInfo">
+      <!-- banner -->
+      <view class="banner">
+        <!-- banner-left -->
+        <view class="banner-left">
+          <image class="banner-bd" src="https://spoiler-1257360572.cos.ap-beijing.myqcloud.com/images/userInfo/bd.jpg" mode="aspectFill" />
+          <view class="banner-left-mask">
+            <view class="banner-left-top">
+              <view class="user-edit">
+                <text class="iconfont icon-icon_ping"></text>
+              </view>
+            </view>
+            <view class="banner-userName">
+              <text class="userName">{{userInfo.nickName}}</text>
+            </view>
+            <view class="banner-userPage">
+              <text class="userPage">查看主页</text>
+            </view>
+          </view>
+        </view>
+        <!-- banner-right -->
+        <view class="banner-right">
+          <!-- 消息 -->
+          <view class="banner-message" bindtap="redirectToCalendar">
+            <view class="message-title">消息</view>
+            <view class="message-icon">
+              <image src="../../image/icon/Comment.png" mode="aspectFill" />
+              <text class="message-num">1{{messageNum}}</text>
+            </view>
+          </view>
+          <!-- 设置 -->
+          <view class="banner-setting" bindtap="redirectToSetting">
+            <text class="iconfont icon-icon_setting_fill"></text>
+          </view>
+        </view>
+      </view>
+      <!-- 列表 -->
+      <view class="category-group">
+        <view class="category">
+          <view class="category-left">
+            <view class="category-img">
+              <image src="../../image/icon/Box.png"></image>
+            </view>
+            <text class="category-title">百宝箱</text>
+          </view>
+          <view class="category-right">
+            <text class="category-info">开放时间卡等功能</text>
+            <text class="iconfont icon-icon_next_arrow"></text>
+          </view>
+        </view>
+        <view class="category">
+          <view class="category-left">
+            <view class="category-img">
+              <image src="../../image/icon/Menu.png"></image>
+            </view>
+            <text class="category-title">清单</text>
+          </view>
+          <view class="category-right">
+            <text class="category-info">{{collectNum}}条清单正在执行</text>
+            <text class="iconfont icon-icon_next_arrow"></text>
+          </view>
+        </view>
+      </view>
+      <!-- 收藏夹 -->
+      <view class="star">
+        <view class="star-title">
+          <text>收藏夹</text>
+        </view>
+        <view class="star-box">
+          <view class="star-box-img">
+            <image src="https://spoiler-1257360572.cos.ap-beijing.myqcloud.com/images/banner/01.jpg" />
+            <view class="star-box-mask">
+              <text class="star-box-inspiration">8个生活灵感</text>
+              <text class="star-box-title">我的生活手册</text>
+            </view>
+          </view>
+          <view class="star-box-img">
+            <image src="https://spoiler-1257360572.cos.ap-beijing.myqcloud.com/images/banner/01.jpg" />
+            <view class="star-box-mask">
+              <text class="star-box-inspiration">8个生活灵感</text>
+              <text class="star-box-title">我的生活手册</text>
+            </view>
+          </view>
+          <view class="star-box-img">
+            <image src="https://spoiler-1257360572.cos.ap-beijing.myqcloud.com/images/banner/01.jpg" />
+            <view class="star-box-mask">
+              <text class="star-box-inspiration">8个生活灵感</text>
+              <text class="star-box-title">我的生活手册</text>
+            </view>
+          </view>
+        </view>
+      </view>
+    </view>
+  </swiper-item>
+</swiper>
+<template is="login-bar" wx:if="{{loginShow}}" />
+<template is="tab-bar" data="{{tabIndex}}" wx:if="{{tabShow}}" />
+<view class="calendar" wx:if="{{calendarShow}}" animation="{{calendarAnimation}}">
+  <!-- 日历 -->
+  <scroll-view>
+    <view class="calendar-title">
+      <view class="today">Today</view>
+      <text class="iconfont icon-roundclosefill close" catch:tap="closeCalendar"></text>
+    </view>
+    <view class="weather">
+      <text></text>
+      <text></text>
+    </view>
+    <view></view>
+    <view class="liquid">
+      <view wx:for="{{liquid}}" wx:key="index" class="panel">
+        <view class="panel-head">
+          <view class="panel-icon">
+            <image class="panel-img" src="../../image/icon/Calendar.png" wx:if="{{item.type == '节假日'}}"></image>
+            <image class="panel-img" src="../../image/icon/Flag.png" wx:if="{{item.type == '钉一下'}}"></image>
+            <image class="panel-img" src="../../image/icon/Heart.png" wx:if="{{item.type == '时光轴'}}"></image>
+            <image class="panel-img" src="../../image/icon/Box.png" wx:if="{{item.type == '记忆碎片'}}"></image>
+          </view>
+          <view class="panel-info">
+            <view class="panel-emoji">🌈</view>
+            <view class="panel-time">{{item.time}}</view>
+          </view>
+          <view class="panel-pin">
+            <text class="panel-type">{{item.type}}</text>
+          </view>
+        </view>
+        <view class="panel-body1" wx:if="{{item.type == '节假日'}}" style="background: url('{{item.wallpaper}}') no-repeat center center; background-size: cover;">
+          <view class="panel-mask">
+            <text class="panel-title">{{item.title}}</text>
+          </view>
+        </view>
+        <view class="panel-body2" wx:if="{{item.type == '钉一下'}}">
+          <view class="panel-left">
+            <text class="panel-title">{{item.title}}</text>
+            <text class="panel-author">-来自 <text class="panel-author-highlight">{{item.author}}</text></text>
+          </view>
+          <view class="panel-right">
+            <view class="user-img" style="background: url('{{item.userImg}}') no-repeat center center; background-size: cover;"></view>
+          </view>
+        </view>
+        <view class="panel-body3" wx:if="{{item.type == '时光轴'}}" style="background: url('{{item.wallpaper}}') no-repeat center center; background-size: cover;">
+          <view class="panel-mask">
+            <text class="panel-title1">我们的纪念</text>
+            <text class="panel-title2">{{item.title}}</text>
+            <text class="panel-title3">{{item.FYI}}</text>
+          </view>
+        </view>
+        <view class="panel-body3" wx:if="{{item.type == '记忆碎片'}}" style="background: url('{{item.wallpaper}}') no-repeat center center; background-size: cover;">
+          <view class="panel-mask">
+            <text class="panel-title1">Pieces of Time</text>
+            <text class="panel-title2">那年·今日</text>
+            <text class="panel-title3">时光机捞取到{{item.num}}块碎片</text>
+          </view>
+        </view>
+      </view>
+    </view>
+  </scroll-view>
+</view>
+<!-- 添加待办事项 -->
+<cover-view class="nav-button" bindtap="navigateToPin" wx:if="{{calendarShow}}">
+  <cover-view class="nav-ulysses">
+    <cover-image class="nav-ulysses-img" src="../../image/icon/Write.png"></cover-image>
+  </cover-view>
+</cover-view>

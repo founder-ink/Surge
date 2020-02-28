@@ -1,8 +1,11 @@
+<import src="gallery-list/gallery-list-template.wxml" />
+<import src="gallery-tab/gallery-tab-template.wxml" />
 <!--Pages/gallery/gallery.wxml-->
-<view>
-  <view class="wallpaper">
-    <view class="wallpaper-mask">
-      <image src="http://pp8qnwtjv.bkt.clouddn.com/surge-bg3.jpg"></image>
-    </view>
-  </view>
+
+<view class="gallery-title">
+  <text>{{galleryTitle}}</text>
 </view>
+<template is="gallery-list" data="{{gallery}}"></template>
+<view class="hr"></view>
+<template is="gallery-tab" data="{{tabKey, tabList}}"></template>
+

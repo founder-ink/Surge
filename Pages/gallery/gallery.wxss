@@ -1,1 +1,19 @@
+@import "gallery-list/gallery-list-template.wxss";
+@import "gallery-tab/gallery-tab-template.wxss";
 /* Pages/gallery/gallery.wxss */
+
+.hr {
+  width: 100%;
+  background: #ECECEC;
+  margin: 0 auto;
+  height: 2rpx;
+}
+
+.gallery-title {
+  display: flex;
+  align-items: center;
+  font-size: 48rpx;
+  font-weight: 600;
+  height: 130rpx;
+  padding-left: 3%;
+}

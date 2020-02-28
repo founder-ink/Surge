@@ -1,0 +1,21 @@
+<template name="fragment-item">
+  <!-- panel-card -->
+  <view class="panel-card">
+    <!-- panel-body -->
+    <view class="panel-body">
+      <image src="{{image}}" mode="aspectFill" />
+      <view class="panel-mask"></view>
+      <text class="panel-title">{{title}}</text>
+    </view>
+    <!-- panel-user -->
+    <view class="panel-user">
+      <view class="panel-userImg">
+        <image src="{{avatar}}" mode="aspectFill"></image>
+      </view>
+      <!-- panel-userName -->
+      <view class="panel-userName">
+        <text>{{author}}</text>
+      </view>
+    </view>
+  </view>
+</template>

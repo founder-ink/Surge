@@ -1,0 +1,26 @@
+.login-bar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 94vw;
+  border-radius: 12px;
+  z-index: 1000;
+  position: fixed;
+  bottom: 30rpx;
+  height: 100rpx;
+  left: 3vw;
+  background: #fefffe;
+  box-shadow: 0 2px 4px 1px rgba(0,0,0,0.2);
+}
+
+.login-bar image {
+  width: 34rpx;
+  height: 34rpx;
+  margin-right: 8rpx;
+}
+
+.login-bar view {
+  font-weight: 600;
+  font-size: 28rpx;
+  letter-spacing: 2rpx;
+}

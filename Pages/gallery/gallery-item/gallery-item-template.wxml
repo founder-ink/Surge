@@ -1,0 +1,11 @@
+<template name="gallery-item">
+  <!-- gallery-item -->
+  <view class="gallery-item-body" catch:tap="navigateToGallery">
+    <image src="{{image}}" mode="aspectFill" />
+    <view class="gallery-item-mask"></view>
+    <text class="gallery-item-position">{{position}}</text>
+    <text class="gallery-item-mark">{{mark}}</text>
+    <text class="gallery-item-sign">已喂出狗粮{{sign}}份</text>
+  </view>
+</template>
+

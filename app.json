@@ -1,29 +1,20 @@
 {
   "pages": [
-    "index/index",
-    "index/index2",
+    "Pages/index/index",
+    "Pages/index2/index2",
     "Pages/calendar/calendar",
     "Pages/timeline/timeline",
     "Pages/setting/setting",
     "Pages/gallery/gallery",
     "Pages/pin/pin",
-    "Pages/emoji/emoji"
+    "Pages/emoji/emoji",
+    "Pages/transition/transition"
   ],
-  "tabBar": {
-    "custom": true,
-    "list": [
-      {
-        "pagePath": "index/index"
-      },
-      {
-        "pagePath": "index/index2"
-      }
-    ]
-  },
   "window": {
     "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#fff",
     "navigationBarTitleText": "WeChat",
     "navigationBarTextStyle": "black"
-  }
+  },
+  "sitemapLocation": "sitemap.json"
 }

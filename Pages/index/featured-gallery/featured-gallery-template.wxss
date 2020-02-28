@@ -1,0 +1,56 @@
+/* featured-panel */
+.featured-panel-body {
+  width: 630rpx;
+  height: 94%;
+  border-radius: 30rpx;
+  color: #FEFFFE;
+  letter-spacing: 1px;
+  box-shadow: 0 0px 10px 1px rgba(0,0,0,0.2);
+  flex-shrink:0;
+  margin: 10rpx 1% 0 3%;
+  position: relative;
+}
+
+.featured-panel-body image {
+  width: 100%;
+  height: 100%;
+  border-radius: 30rpx;
+}
+
+.featured-panel-position {
+  font-size: 24rpx;
+  position: absolute;
+  z-index: 2;
+  top: 50rpx;
+  left: 50rpx;
+  letter-spacing: 2rpx;
+}
+
+.featured-panel-mark {
+  font-size: 42rpx;
+  font-weight: 600;
+  position: absolute;
+  z-index: 2;
+  top: 110rpx;
+  left: 50rpx;
+}
+
+.featured-panel-sign {
+  font-size: 24rpx;
+  position: absolute;
+  z-index: 2;
+  bottom: 30rpx;
+  left: 50rpx;
+  letter-spacing: 2rpx;
+}
+
+.featured-panel-mask {
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,.3);
+  border-radius: 30rpx;
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  left: 0;
+}

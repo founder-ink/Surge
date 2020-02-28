@@ -1,0 +1,32 @@
+@import "../gallery-item/gallery-item-template.wxss";
+
+/* gallery-list */
+.gallery-list {
+  width: 100%;
+  height: 360rpx;
+}
+
+.gallery-list-title {
+  width: 96%;
+  height: 120rpx;
+  display: flex;
+  align-items: center;
+  font-weight: 600;
+  letter-spacing: 1px;
+  font-size: 40rpx;
+  padding-left: 4%;
+}
+
+.gallery-list-panel {
+  display: flex;
+  flex-wrap: nowrap;
+  height: 320rpx;
+  align-items: center;
+  padding-left: 6%;
+}
+
+.gallery-list-block {
+  width: 20rpx;
+  flex-shrink: 0;
+  height: 90%;
+}

@@ -1,0 +1,18 @@
+<import src="../featured-gallery/featured-gallery-template.wxml" />
+<template name="featured-panel">
+  <view class="featured">
+    <view class="featured-title">
+      <text>{{categoryTitle}}</text>
+    </view>
+    <scroll-view scroll-x="true">
+      <view class="featured-panel" >
+        <block wx:for="{{gallery}}" wx:for-item="item" wx:key="index">
+          <template is="featured-gallery" data="{{...item}}" />
+        </block>
+        <view class="featured-block"></view>
+      </view>
+    </scroll-view>
+  </view>
+  <view class="hr"></view>
+</template>
+

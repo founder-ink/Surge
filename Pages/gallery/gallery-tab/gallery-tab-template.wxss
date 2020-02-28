@@ -1,0 +1,76 @@
+scroll-view {
+  padding: 0 30rpx;
+  box-sizing: border-box;
+}
+
+.gallery-tab {
+  display: flex;
+  align-items: center;
+  height: 130rpx;
+  flex-wrap: nowrap;
+}
+
+.tab-block {
+  margin-right: 80rpx;
+  flex-shrink: 0;
+  font-size: 28rpx;
+  height: 50rpx;
+}
+
+.tab-active {
+  font-weight: 600;
+  border-bottom: 3px solid #6ab076;
+}
+
+.gallery-tabContent {
+  width: 100%;
+  color: #fefffe;
+}
+
+.tabContent-box {
+  width: 84%;
+  height: 520rpx;
+  margin-left: 8%;
+  display: flex;
+  align-items: center;
+  position: relative;
+  border-radius: 30rpx;
+  margin-bottom: 50rpx;
+  letter-spacing: 2rpx;
+}
+
+.gallery-tabContent image {
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  border-radius: 30rpx;
+}
+
+.tabContent-mask {
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.3);
+  border-radius: 30rpx;
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  left: 0;
+}
+
+.tabContent-mark {
+  font-size: 48rpx;
+  font-weight: 600;
+  position: absolute;
+  z-index: 2;
+  top: 90rpx;
+  left: 50rpx;
+}
+
+.tabContent-sign {
+  font-size: 24rpx;
+  position: absolute;
+  z-index: 2;
+  bottom: 40rpx;
+  left: 50rpx;
+  letter-spacing: 2rpx;
+}

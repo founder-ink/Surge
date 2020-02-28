@@ -1,0 +1,10 @@
+<template name="tab-bar">
+  <cover-view class="tab-bar">
+    <cover-view class="tab-button {{tabIndex == 0 ? 'active' : 'normal'}}" data-index="0" catch:tap="switchTab">
+      <cover-image class="tab-img" src="../../image/icon/icon_Inbox.png" />
+    </cover-view>
+    <cover-view class="tab-button {{tabIndex == 1 ? 'active' : 'normal'}}" data-index="1" catch:tap="switchTab">
+      <cover-image class="tab-img" src="../../image/icon/icon_namecard_fill.png" />
+    </cover-view>
+  </cover-view>
+</template>

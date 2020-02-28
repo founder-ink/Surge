@@ -1,0 +1,31 @@
+<import src="../fragment-item/fragment-item-template.wxml" />
+<template name="fragment-flow">
+  <!-- flow -->
+  <view class="flow">
+    <!-- flow-title -->
+    <view class="flow-title">
+      <text>{{categoryTitle}}</text>
+    </view>
+    <block wx:for="{{fragmentFlow}}" wx:key="index" wx:for-item="item">
+      <!-- nav -->
+      <view class="nav">
+        <!-- nav-title -->
+        <view class="nav-title">
+          <view class="nav-title-block"></view>
+          <text>{{item.title}}</text>
+        </view>
+        <!-- panel -->
+        <scroll-view scroll-x="{{true}}">
+          <view class="panel">
+            <block wx:for="{{item.dataList}}" wx:for-item="item1" wx:key="index1">
+              <template is="fragment-item" data="{{...item1}}" />
+            </block>
+          </view>
+        </scroll-view>
+        <!-- panel-info -->
+        <view class="panel-info">来自  {{item.info}}</view>
+      </view>
+      <view class="hr"></view>
+    </block>
+  </view>
+</template>

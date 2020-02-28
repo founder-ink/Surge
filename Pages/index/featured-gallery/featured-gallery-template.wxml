@@ -1,0 +1,11 @@
+<template name="featured-gallery">
+  <!-- featured-panel-body -->
+  <view class="featured-panel-body" catch:tap="navigateToGallery">
+    <image src="{{image}}" mode="aspectFill" />
+    <view class="featured-panel-mask"></view>
+    <text class="featured-panel-position">{{position}}</text>
+    <text class="featured-panel-mark">{{mark}}</text>
+    <text class="featured-panel-sign">已喂出狗粮{{sign}}份</text>
+  </view>
+</template>
+

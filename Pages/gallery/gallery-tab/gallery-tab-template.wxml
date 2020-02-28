@@ -1,0 +1,21 @@
+<template name="gallery-tab">
+  <scroll-view enable-flex="{{true}}" scroll-x="{{true}}">
+    <view class="gallery-tab">
+      <block wx:for="{{tabList}}" wx:key="index" wx:for-item="item">
+        <view class="tab-block {{tabKey == item.tabKey ? 'tab-active' : ''}}" data-key="{{item.tabKey}}" catch:tap="tabSwitch">{{item.label}}</view>
+      </block>
+    </view>
+  </scroll-view>
+  <block wx:for="{{tabList}}" wx:key="index1" wx:for-item="item1">
+    <view class="gallery-tabContent" wx:if="{{tabKey == item1.tabKey ? true : false}}">
+      <block wx:for="{{item1.images}}" wx:key="index2" wx:for-item="item2">
+          <view class="tabContent-box">
+            <image src="{{item2.image}}" mode="aspectFill" />
+            <view class="tabContent-mask"></view>
+            <text class="tabContent-mark">{{item2.mark}}</text>
+            <text class="tabContent-sign">{{item2.sign}}</text>
+          </view>
+      </block>
+    </view>
+  </block>
+</template>

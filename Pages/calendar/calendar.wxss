@@ -163,7 +163,7 @@ page {
 
 .panel-body2 .panel-author .panel-author-highlight {
   text-decoration:underline;
-  color: #69b076;
+  color: #6AB076;
 }
 
 .panel-body3 {
